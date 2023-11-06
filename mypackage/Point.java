@@ -5,6 +5,9 @@ public class Point{
     private int abs;
     private int ord;
     
+    public Point(int abs, int ord){
+        this.initialiser(abs,ord);
+    }
     public void initialiser(int abs, int ord){
         this.abs = abs;
         this.ord = ord;
