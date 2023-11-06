@@ -12,8 +12,7 @@ public class PointCol extends Point{
         this.couleur = couleur;
     }
 
-    public void afficheCol(){
-        this.affiche();
-        System.out.println("de couleur "+this.couleur);
+    public void affiche(){
+        System.out.println("Je suis un point de coordonnees "+this.abs + " et " + this.ord+" de couleur "+this.couleur);
     }
 }
