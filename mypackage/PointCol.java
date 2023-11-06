@@ -12,7 +12,7 @@ public class PointCol extends Point{
         this.couleur = couleur;
     }
 
-    public class afficheCol(){
+    public void afficheCol(){
         this.affiche();
         System.out.println("de couleur "+this.couleur);
     }
