@@ -1,18 +1,17 @@
 import mypackage.*;
-
+import java.util.Random;
 public class Test{
     
     public static void main(String[] args){
+        Random rand = new Random();
+        Point points[] = new Point[10];
+        for (int i = 0; i < 10; i++)
+            if(rand.nextInt()%2 == 0)
+                points[i] = new Point(rand.nextInt(),rand.nextInt());
+            else
+                points[i] = new PointCol(rand.nextInt(),rand.nextInt(),(byte)rand.nextInt(100));
 
-        PointCol point;
-
-        point = new PointCol(5,5,(byte)125);
-        System.out.println("test heritage de la methode afficher sur pointcol");
-        point.affiche();
-        System.out.println("test heritage de la methode afficherCol sur pointcol");
-        point.afficheCol();
-        System.out.println("test heritage de la methode deplacer sur pointcol");
-        point.deplacer(9,6);
-        point.afficheCol();
+        for(int i = 0; i < 10; i++)
+            points[i].affiche();  
     }
 }
