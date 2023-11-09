@@ -2,8 +2,8 @@ package mypackage;
 
 public class Point{
 
-    protected int abs;
-    protected int ord;
+    private int abs;
+    private int ord;
     
     public Point(int abs, int ord){
         this.initialiser(abs,ord);
